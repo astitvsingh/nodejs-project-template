@@ -15,7 +15,7 @@ Thank you for your interest in contributing to [Project Name]! Your contribution
 
 If you find a bug or issue in the project, please follow these steps to report it:
 
-1. **Check Existing Issues**: Before reporting a new bug, check the [issue tracker](#) to see if the issue has already been reported.
+1. **Check Existing Issues**: Before reporting a new bug, check the [issue tracker](https://github.com/[your-username]/[repo-name]/issues) to see if the issue has already been reported.
 2. **Provide a Detailed Description**: Include a clear and concise description of the issue, steps to reproduce it, and the expected vs. actual behavior.
 3. **Include Environment Details**: Provide information about your environment (e.g., OS, Node.js version, etc.).
 4. **Submit a Bug Report**: Use the [bug report template](../.github/ISSUE_TEMPLATE/bug_report_template.md) to submit your report.
@@ -24,7 +24,7 @@ If you find a bug or issue in the project, please follow these steps to report i
 
 To request a new feature or enhancement:
 
-1. **Search for Existing Requests**: Check the [issue tracker](#issues) to ensure the feature hasn’t been requested before.
+1. **Search for Existing Requests**: Check the [issue tracker](https://github.com/[your-username]/[repo-name]/issues) to ensure the feature hasn’t been requested before.
 2. **Describe the Feature**: Provide a detailed description of the feature and how it would benefit the project.
 3. **Explain the Use Case**: Describe how you or others might use this feature in practice.
 4. **Submit a Feature Request**: Use the [feature request template](../.github/ISSUE_TEMPLATE/feature_request_template.md) to make your request.
@@ -37,18 +37,35 @@ To contribute code to the project:
 2. **Clone Your Fork**: Clone your fork to your local machine.
 
    ```bash
-   git clone https://github.com/your-username/[project-name].git
+   git clone https://github.com/[your-username]/[repo-name].git
    ```
 
-3. **Create a New Branch**: Create a new branch for your changes.
+3. **Configuring Git Templates**: To configure Git to use commit message, issue, and pull request templates.
+
+   - **Commit Message Template**: Set up a global or local commit message template.
+
+   ```bash
+   git config --global commit.template .github/COMMIT_TEMPLATE/commit_template.md
+   ```
+
+   or
+
+   ```bash
+   git config commit.template .github/COMMIT_TEMPLATE/commit_template.md
+   ```
+
+   - **Issue Templates**: Issue templates are automatically used when creating new issues on GitHub, so no additional configuration is required.
+   - **Pull Request Templates**: Pull request templates are automatically used when creating new pull requests on GitHub, so no additional configuration is required.
+
+4. **Create a New Branch**: Create a new branch for your changes.
 
    ```bash
    git checkout -b feature/your-feature
    ```
 
-4. **Make Your Changes**: Implement your changes or new features.
-5. **Write Tests**: Ensure that your code includes tests and passes existing tests.
-6. **Commit Your Changes**: Follow the commit message guidelines.
+5. **Make Your Changes**: Implement your changes or new features.
+6. **Write Tests**: Ensure that your code includes tests and passes existing tests.
+7. **Commit Your Changes**: Follow the commit message guidelines.
 
    ```bash
    git add .
@@ -58,13 +75,13 @@ To contribute code to the project:
    git commit -m "Add feature: describe the feature"
    ```
 
-7. **Push Your Changes**: Push your changes to your fork.
+8. **Push Your Changes**: Push your changes to your fork.
 
    ```bash
    git push origin feature/your-feature
    ```
 
-8. **Create a Pull Request**: Open a pull request from your branch to the `main` branch of the original repository.
+9. **Create a Pull Request**: Open a pull request from your branch to the `main` branch of the original repository.
 
 ## Code Review Process
 
@@ -89,5 +106,3 @@ We welcome feedback and suggestions:
 
 1. **Provide Constructive Feedback**: Offer suggestions in a constructive and positive manner.
 2. **Participate in Discussions**: Engage in discussions to help improve the project.
-
-For more detailed information, please refer to the [full contribution guidelines](CONTRIBUTING.md).
