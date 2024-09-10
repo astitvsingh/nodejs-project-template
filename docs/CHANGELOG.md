@@ -28,7 +28,7 @@ This `CHANGELOG.md` document serves as a chronological record of changes, update
 
 - Bug fix for issue Y
 
-<hr>
+<hr/>
 
 ## [v1.0.0] - 2024-04-01
 
