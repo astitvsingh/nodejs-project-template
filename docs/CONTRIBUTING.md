@@ -99,7 +99,7 @@ To contribute code to the project:
    ```
 
    ```bash
-   git commit -m "Add feature: describe the feature"
+   git commit
    ```
 
 8. **Push Your Changes**: Push your changes to your fork.
