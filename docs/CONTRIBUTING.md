@@ -7,6 +7,16 @@ Thank you for your interest in contributing to [Project Name]! Your contribution
 1. [Reporting Bugs](#reporting-bugs)
 2. [Requesting Features](#requesting-features)
 3. [Contributing Code](#contributing-code)
+   - [Fork the Repository](#fork-the-repository)
+   - [Clone your Forked Repository](#clone-your-fork)
+   - [Configure Git on Local Dev Machine](#configure-git-on-local-dev-machine)
+   - [Create a New Branch](#create-a-new-branch)
+   - [Make Your Changes](#make-your-changes)
+   - [Write Tests](#write-tests)
+   - [Commit Your Changes](#commit-your-changes)
+   - [Push Your Changes](#push-your-changes)
+   - [Open a Pull Request](#open-a-pull-request)
+   - [Updating Your Pull Request](#updating-your-pull-request)
 4. [Code Review Process](#code-review-process)
 5. [Communication](#communication)
 6. [Feedback and Suggestions](#feedback-and-suggestions)
@@ -33,14 +43,21 @@ To request a new feature or enhancement:
 
 To contribute code to the project:
 
-1. **Fork the Repository**: Create a personal fork of the repository on GitHub.
-2. **Clone Your Fork**: Clone your fork to your local machine
+1. ### **Fork the Repository**
+
+   Create a personal fork of the repository on GitHub.
+
+2. ### **Clone Your Fork**
+
+   Clone your fork to your local machine
 
    ```bash
    git clone <forked-repository-url>
    ```
 
-3. **Configuring Git**: To configure Git to use commit message, issue, and pull request templates. Set up a global or local git config.
+3. ### **Configure Git on Local Dev Machine**
+
+   To configure Git to use commit message, issue, and pull request templates. Set up a global or local git config.
 
    - **Locally**: To use Git commit, issue, and pull request templates locally
 
@@ -84,15 +101,25 @@ To contribute code to the project:
         git config --global pullrequest.template C:/Program\ Files/Git/.github/PULL_REQUEST_TEMPLATE/pull_request_template.md
         ```
 
-4. **Create a New Branch**: Create a new branch for your changes.
+4. ### **Create a New Branch**
+
+   Create a new branch for your changes.
 
    ```bash
    git checkout -b feature/your-feature
    ```
 
-5. **Make Your Changes**: Implement your changes or new features.
-6. **Write Tests**: Ensure that your code includes tests and passes existing tests.
-7. **Commit Your Changes**: Follow the commit message guidelines.
+5. ### **Make Your Changes**
+
+   Implement your changes or new features.
+
+6. ### **Write Tests**
+
+   Ensure that your code includes tests and passes existing tests.
+
+7. ### **Commit Your Changes**
+
+   Follow the commit message guidelines.
 
    ```bash
    git add .
@@ -102,13 +129,17 @@ To contribute code to the project:
    git commit
    ```
 
-8. **Push Your Changes**: Push your changes to your fork.
+8. ### **Push Your Changes**
+
+   Push your changes to your fork.
 
    ```bash
    git push origin feature/your-feature
    ```
 
-9. **Create a Pull Request**: Open a pull request from your branch to the `main` branch of the original repository.
+9. ### **Open a Pull Request**
+
+   Open a pull request from your branch to the `main` branch of the original repository.
 
 ## Code Review Process
 
