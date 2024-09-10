@@ -16,7 +16,6 @@ Thank you for your interest in contributing to [Project Name]! Your contribution
    - [Commit Your Changes](#commit-your-changes)
    - [Push Your Changes](#push-your-changes)
    - [Open a Pull Request](#open-a-pull-request)
-   - [Updating Your Pull Request](#updating-your-pull-request)
 4. [Code Review Process](#code-review-process)
 5. [Communication](#communication)
 6. [Feedback and Suggestions](#feedback-and-suggestions)

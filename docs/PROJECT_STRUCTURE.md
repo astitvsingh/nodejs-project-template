@@ -6,16 +6,12 @@ This document provides a comprehensive overview of the directory structure for t
 
 1. [Root Directory Layout](#root-directory-layout)
 2. [Directory and File Descriptions](#directory-and-file-descriptions)
+   - [.envs/](#envs)
    - [.github/](#github)
      - [COMMIT_TEMPLATE/](#commit_template)
      - [ISSUE_TEMPLATE/](#issue_template)
      - [PULL_REQUEST_TEMPLATE/](#pull_request_template)
    - [docs/](#docs)
-   - [.env.development.local.example](#envdevelopmentlocalexample)
-   - [.env.example](#envexample)
-   - [.env.local.example](#envlocalexample)
-   - [.env.production.local.example](#envproductionlocalexample)
-   - [.env.test.local.example](#envtestlocalexample)
    - [.gitignore](#gitignore)
    - [LICENSE](#license)
    - [README.md](#readmemd)
@@ -23,6 +19,13 @@ This document provides a comprehensive overview of the directory structure for t
 ## Root Directory Layout
 
 ```bash
+├── /.envs                              # Documentation and guides related to the project
+│ ├── .env.development.local.example    # Example environment configuration file for development environment
+│ ├── .env.example                      # Example environment configuration file for local development
+│ ├── .env.local.example                # Example environment configuration file for local overrides
+│ ├── .env.production.local.example     # Example environment configuration file for production environment
+│ └── .env.test.local.example           # Example environment configuration file for testing environment
+│
 ├── /.github                            # Contains GitHub-related configuration files
 │ ├── /COMMIT_TEMPLATE                  # Commit message templates for standardized commit messages
 │ │ └── commit_template.md              # Template for commit messages to maintain consistency
@@ -42,17 +45,24 @@ This document provides a comprehensive overview of the directory structure for t
 │ ├── DOCS.md                           # General documentation, including API details, usage instructions, and best practices
 │ └── PROJECT_STRUCTURE.md              # Detailed explanation of the project's directory structure and file purposes
 │
-├── .env.development.local.example      # Example environment configuration file for development environment
-├── .env.example                        # Example environment configuration file for local development
-├── .env.local.example                  # Example environment configuration file for local overrides
-├── .env.production.local.example       # Example environment configuration file for production environment
-├── .env.test.local.example             # Example environment configuration file for testing environment
 ├── .gitignore                          # Specifies files and directories to be ignored by Git
 ├── LICENSE                             # License file outlining the terms under which the project is distributed
 └── README.md                           # Provides an overview of the project, including its purpose, setup instructions, and usage
 ```
 
 ## Directory and File Descriptions
+
+### .envs/
+
+- **_.env.development.local.example_**: Example environment configuration file for development environment
+
+- **_.env.example_**: Example environment configuration file for local development environment
+
+- **_.env.local.example_**: Example environment configuration file for local overrides
+
+- **_.env.production.local.example_**: Example environment configuration file for production environment
+
+- **_.env.test.local.example_**: Example environment configuration file for testing environment
 
 ### .github/
 
@@ -93,26 +103,6 @@ This directory holds documentation and guides for the project.
 - **_DOCS.md_**: Contains general documentation on the project's API, usage, and other important details.
 
 - **_PROJECT_STRUCTURE.md_**: Describes the project's directory layout and the purpose of each file and directory, helping new developers understand the project's organization.
-
-### env.development.local.example
-
-Example environment configuration file for development environment
-
-### env.example
-
-Example environment configuration file for local development environment
-
-### .env.local.example
-
-Example environment configuration file for local overrides
-
-### .env.production.local.example
-
-Example environment configuration file for production environment
-
-### .env.test.local.example
-
-Example environment configuration file for testing environment
 
 ### .gitignore
 
