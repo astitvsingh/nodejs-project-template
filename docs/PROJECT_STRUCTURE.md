@@ -26,18 +26,22 @@ This document provides a comprehensive overview of the directory structure for t
 ├── /.github                            # Contains GitHub-related configuration files
 │ ├── /COMMIT_TEMPLATE                  # Commit message templates for standardized commit messages
 │ │ └── commit_template.md              # Template for commit messages to maintain consistency
+│ │
 │ ├── /ISSUE_TEMPLATE                   # Templates for creating issues
 │ │ ├── bug_report_form.yml             # YAML file defining the form for reporting bugs
 │ │ ├── bug_report_template.md          # Markdown template for bug reports
-│ │ ├── feature_request_template.md     # Markdown template for feature requests
-│ ├── /PULL_REQUEST_TEMPLATE            # Template for pull requests
-│ │ └── pull_request_template.md        # Markdown template for pull requests to ensure all necessary information is provided
+│ │ └── feature_request_template.md     # Markdown template for feature requests
+│ │
+│ └── /PULL_REQUEST_TEMPLATE            # Template for pull requests
+│   └── pull_request_template.md        # Markdown template for pull requests to ensure all necessary information is provided
+│
 ├── /docs                               # Documentation and guides related to the project
 │ ├── CHANGELOG.md                      # Record of changes and updates made to the project over time
 │ ├── CONTRIBUTING.md                   # Guidelines and instructions for contributing to the project
 │ ├── DEVELOPMENT_GUIDE.md              # Step-by-step guide for developers to set up and work on the project
 │ ├── DOCS.md                           # General documentation, including API details, usage instructions, and best practices
 │ └── PROJECT_STRUCTURE.md              # Detailed explanation of the project's directory structure and file purposes
+│
 ├── .env.development.local.example      # Example environment configuration file for development environment
 ├── .env.example                        # Example environment configuration file for local development
 ├── .env.local.example                  # Example environment configuration file for local overrides
