@@ -11,6 +11,11 @@ This document provides a comprehensive overview of the directory structure for t
      - [ISSUE_TEMPLATE/](#issue_template)
      - [PULL_REQUEST_TEMPLATE/](#pull_request_template)
    - [docs/](#docs)
+   - [.env.development.local.example](#envdevelopmentlocalexample)
+   - [.env.example](#envexample)
+   - [.env.local.example](#envlocalexample)
+   - [.env.production.local.example](#envproductionlocalexample)
+   - [.env.test.local.example](#envtestlocalexample)
    - [.gitignore](#gitignore)
    - [LICENSE](#license)
    - [README.md](#readmemd)
@@ -83,15 +88,25 @@ This directory holds documentation and guides for the project.
 
 - **_PROJECT_STRUCTURE.md_**: Describes the project's directory layout and the purpose of each file and directory, helping new developers understand the project's organization.
 
-- **_.env.development.local.example_**: Example environment configuration file for development environment
+### env.development.local.example
 
-- **_.env.example_**: Example environment configuration file for local development environment
+Example environment configuration file for development environment
 
-- **_.env.local.example_**: Example environment configuration file for local overrides
+### env.example
 
-- **_.env.production.local.example_**: Example environment configuration file for production environment
+Example environment configuration file for local development environment
 
-- **_.env.test.local.example_**: Example environment configuration file for testing environment
+### .env.local.example
+
+Example environment configuration file for local overrides
+
+### .env.production.local.example
+
+Example environment configuration file for production environment
+
+### .env.test.local.example
+
+Example environment configuration file for testing environment
 
 ### .gitignore
 
