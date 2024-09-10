@@ -7,8 +7,8 @@ This document provides a comprehensive overview of the directory structure for t
 1. [Root Directory Layout](#root-directory-layout)
 2. [Directory and File Descriptions](#directory-and-file-descriptions)
    - [/.github/](#github)
-     - [/COMMIT_TEMPLATE/](#commit-template)
-     - [/ISSUE_TEMPLATE/](#issue-template)
+     - [/COMMIT_TEMPLATE/](#commit_template)
+     - [/ISSUE_TEMPLATE/](#issue_template)
      - [/PULL_REQUEST_TEMPLATE/](#pull-request-template)
    - [/docs/](#docs)
    - [.gitignore](#gitignore)
@@ -45,11 +45,11 @@ This document provides a comprehensive overview of the directory structure for t
 
 ## Directory and File Descriptions
 
-### /.github/
+### - /.github/
 
 This directory contains configuration files related to GitHub. These include templates for commit messages, issues, and pull requests, which help maintain consistency and provide clear guidelines for contributors.
 
-#### /COMMIT_TEMPLATE/
+#### - /COMMIT_TEMPLATE/
 
 Contains templates for standardized commit messages to ensure that commit history is clean and informative.
 
