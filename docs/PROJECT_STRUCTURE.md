@@ -49,19 +49,21 @@ This document provides a comprehensive overview of the directory structure for t
 
 This directory contains configuration files related to GitHub. These include templates for commit messages, issues, and pull requests, which help maintain consistency and provide clear guidelines for contributors.
 
-- ### /COMMIT_TEMPLATE/
+### /COMMIT_TEMPLATE/
 
 Contains templates for standardized commit messages to ensure that commit history is clean and informative.
 
-  - **_commit_template.md_**: Defines the format for commit messages to promote consistency across commits.
+- **_commit_template.md_**: Defines the format for commit messages to promote consistency across commits.
 
-- **/ISSUE_TEMPLATE/**: Includes templates for creating issues on GitHub. These templates help users provide detailed information when reporting bugs or requesting features.
+### /ISSUE_TEMPLATE/
 
-  - bug_report_form.yml: A YAML file defining the structure of the bug report form.
+Includes templates for creating issues on GitHub. These templates help users provide detailed information when reporting bugs or requesting features.
 
-  - bug_report_template.md: A markdown template for reporting bugs.
+- **_bug_report_form.yml_**: A YAML file defining the structure of the bug report form.
 
-  - feature_request_template.md: A markdown template for requesting new features.
+- bug_report_template.md: A markdown template for reporting bugs.
+
+- feature_request_template.md: A markdown template for requesting new features.
 
 - /PULL_REQUEST_TEMPLATE/: Contains templates for pull requests to ensure that contributors provide all necessary information and follow best practices.
 
