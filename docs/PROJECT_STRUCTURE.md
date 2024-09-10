@@ -45,17 +45,15 @@ This document provides a comprehensive overview of the directory structure for t
 
 ## Directory and File Descriptions
 
-### - /.github/
+### /.github/
 
 This directory contains configuration files related to GitHub. These include templates for commit messages, issues, and pull requests, which help maintain consistency and provide clear guidelines for contributors.
 
-#### - /COMMIT_TEMPLATE/
+- ### /COMMIT_TEMPLATE/
 
 Contains templates for standardized commit messages to ensure that commit history is clean and informative.
 
-##### commit_template.md
-
-Defines the format for commit messages to promote consistency across commits.
+  - **_commit_template.md_**: Defines the format for commit messages to promote consistency across commits.
 
 - **/ISSUE_TEMPLATE/**: Includes templates for creating issues on GitHub. These templates help users provide detailed information when reporting bugs or requesting features.
 
