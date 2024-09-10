@@ -34,28 +34,55 @@ To request a new feature or enhancement:
 To contribute code to the project:
 
 1. **Fork the Repository**: Create a personal fork of the repository on GitHub.
-2. **Clone Your Fork**: Clone your fork to your local machine.
+2. **Clone Your Fork**: Clone your fork to your local machine
 
    ```bash
-   git clone https://github.com/[your-username]/[repo-name].git
+   git clone <forked-repository-url>
    ```
 
-3. **Configuring Git Templates**: To configure Git to use commit message, issue, and pull request templates.
+3. **Configuring Git**: To configure Git to use commit message, issue, and pull request templates. Set up a global or local git config.
 
-   - **Commit Message Template**: Set up a global or local commit message template.
+   - **Locally**: To use Git commit, issue, and pull request templates locally
 
-   ```bash
-   git config --global commit.template .github/COMMIT_TEMPLATE/commit_template.md
-   ```
+     1. **_Configure Git Locally_**
 
-   or
+        ```bash
+        git config --local commit.template .github/COMMIT_TEMPLATE/commit_template.md
+        ```
 
-   ```bash
-   git config commit.template .github/COMMIT_TEMPLATE/commit_template.md
-   ```
+        ```bash
+        git config --local core.quotepath false
+        ```
 
-   - **Issue Templates**: Issue templates are automatically used when creating new issues on GitHub, so no additional configuration is required.
-   - **Pull Request Templates**: Pull request templates are automatically used when creating new pull requests on GitHub, so no additional configuration is required.
+        ```bash
+        git config --local issue.template .github/ISSUE_TEMPLATE/bug_report_form.yml
+        ```
+
+        ```bash
+        git config --local pullrequest.template .github/PULL_REQUEST_TEMPLATE/pull_request_template.md
+        ```
+
+   - **Globally**: To use Git commit, issue, and pull request templates globally
+
+     1. **_Copy the Templates_**: Copy the `.github/` directory from this repository to `C:\Program Files\Git\`
+
+     2. **_Configure Git Globally_**:
+
+        ```bash
+        git config --global commit.template C:/Program\ Files/Git/.github/COMMIT_TEMPLATE/commit_template.md
+        ```
+
+        ```bash
+        git config --global core.quotepath false
+        ```
+
+        ```bash
+        git config --global issue.template C:/Program\ Files/Git/.github/ISSUE_TEMPLATE/bug_report_form.yml
+        ```
+
+        ```bash
+        git config --global pullrequest.template C:/Program\ Files/Git/.github/PULL_REQUEST_TEMPLATE/pull_request_template.md
+        ```
 
 4. **Create a New Branch**: Create a new branch for your changes.
 
