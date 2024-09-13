@@ -3,7 +3,7 @@ name: "🐞 Bug Report"
 description: "Create a bug issue report to help us improve"
 about: "Create a bug issue report to help us improve"
 title: "🐞[BUG]: <title>"
-labels: ["Bug", "Needs Triage"]
+labels: ["bug"]
 ---
 
 ## **Description**

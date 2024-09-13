@@ -1,7 +1,7 @@
 name: "🐞 Bug Report Form"
 description: "File a bug issue report form to help us improve"
 title: "🐞 [BUG]: <title>"
-labels: ["Bug", "Needs Triage"]
+labels: ["bug"]
 body:
   - type: checkboxes
     attributes:
