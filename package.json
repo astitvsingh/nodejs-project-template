@@ -1,0 +1,52 @@
+{
+  "name": "nodejs-project-template",
+  "version": "0.1.0-alpha",
+  "description": "A comprehensive TypeScript NodeJs Boilerplate",
+  "main": "dist/cjs/index.js",
+  "module": "dist/esm/index.js",
+  "types": "dist/esm/index.d.ts",
+  "type": "module",
+  "directories": {
+    "doc": "docs"
+  },
+  "exports": {
+    ".": {
+      "require": "./dist/cjs/index.js",
+      "import": "./dist/esm/index.js",
+      "types": "./dist/esm/index.d.ts"
+    }
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.cjs.json && tsc -p tsconfig.esm.json",
+    "test": "jest --coverage",
+    "docify": "typedoc --entryPointStrategy expand src --out docs",
+    "prepublishOnly": "npm run build && npm run test && npm run docify"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/[YOUR_GITHUB_USERNAME]/[YOUR_GITHUB_REPO_NAME].git"
+  },
+  "keywords": [
+    "typescript"
+  ],
+  "author": "[YOUR_NAME] <https://github.com/[YOUR_GITHUB_USERNAME]>",
+  "license": "SEE LICENSE IN LICENSE",
+  "bugs": {
+    "url": "https://github.com/[YOUR_GITHUB_USERNAME]/[YOUR_GITHUB_REPO_NAME]/issues"
+  },
+  "homepage": "https://github.com/[YOUR_GITHUB_USERNAME]/[YOUR_GITHUB_REPO_NAME]#readme",
+  "devDependencies": {
+    "@types/events": "^3.0.3",
+    "@types/jest": "^29.5.14",
+    "@types/node": "^22.7.6",
+    "jest": "^29.7.0",
+    "ts-jest": "^29.2.5",
+    "ts-node": "^10.9.2",
+    "typedoc": "^0.26.10",
+    "typescript": "^5.6.3"
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ]
+}

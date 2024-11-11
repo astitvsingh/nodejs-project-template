@@ -1,0 +1,10 @@
+//@collapse
+
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "module": "CommonJS",
+    "declaration": true,
+    "outDir": "./dist/cjs"
+  }
+}

@@ -1,0 +1,22 @@
+//@collapse
+
+// Main TypeScript configuration file for the project. It includes options for the general TypeScript setup.
+
+{
+  "compilerOptions": {
+    "module": "ESNext", // Use native ECMAScript module syntax (import/export) for modern JavaScript development
+    "moduleResolution": "node", // Resolves modules in the same way Node.js does, supporting npm-style imports
+    "target": "ES2020", // Specifies the output JavaScript version. Here, it's set to ES2020 for modern JavaScript features.
+    "declaration": true, // Generates .d.ts files for type definitions, making it easier to integrate with other TypeScript projects
+    "outDir": "./dist", // Specifies the output directory where compiled JavaScript files and types are stored
+    "strict": true, // Enables strict type-checking for better type safety (recommended for better code quality)
+    "esModuleInterop": true, // Ensures compatibility between ESModules and CommonJS, allowing smoother interoperability
+    "forceConsistentCasingInFileNames": true, // Enforces consistent casing for file names, preventing issues in case-sensitive systems
+    "skipLibCheck": true, // Skips type checking of library files to improve build speed
+    "sourceMap": true // Generates source maps for easier debugging in case of errors, mapping compiled code to the original source code
+  },
+
+  // Specifies which files to include and exclude during the compilation
+  "include": ["src/**/*"], // Includes all TypeScript files in the 'src' directory for compilation
+  "exclude": ["node_modules", "dist"] // Excludes 'node_modules' and 'dist' directories from the compilation process (we don't want to compile third-party dependencies or compiled files)
+}
