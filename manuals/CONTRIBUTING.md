@@ -4,21 +4,14 @@ Thank you for your interest in contributing to [Project Name]! Your contribution
 
 ## Table of Contents
 
-1. [Reporting Bugs](#reporting-bugs)
-2. [Requesting Features](#requesting-features)
-3. [Contributing Code](#contributing-code)
-   - [Fork the Repository](#fork-the-repository)
-   - [Clone your Forked Repository](#clone-your-fork)
-   - [Configure Git on Local Dev Machine](#configure-git-on-local-dev-machine)
-   - [Create a New Branch](#create-a-new-branch)
-   - [Make Your Changes](#make-your-changes)
-   - [Write Tests](#write-tests)
-   - [Commit Your Changes](#commit-your-changes)
-   - [Push Your Changes](#push-your-changes)
-   - [Open a Pull Request](#open-a-pull-request)
-4. [Code Review Process](#code-review-process)
-5. [Communication](#communication)
-6. [Feedback and Suggestions](#feedback-and-suggestions)
+- [Contributing to \[Project Name\]](#contributing-to-project-name)
+  - [Table of Contents](#table-of-contents)
+  - [Reporting Bugs](#reporting-bugs)
+  - [Requesting Features](#requesting-features)
+  - [Contributing Code](#contributing-code)
+  - [Code Review Process](#code-review-process)
+  - [Communication](#communication)
+  - [Feedback and Suggestions](#feedback-and-suggestions)
 
 ## Reporting Bugs
 
