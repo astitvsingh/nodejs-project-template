@@ -1,0 +1,13 @@
+{
+  "name": "Ubuntu DevContainer",
+  "dockerComposeFile": "docker-compose.yml",
+  "service": "dev-container",
+  "workspaceFolder": "/workspace",
+  "customizations": {
+    "vscode": {
+      "extensions": [],
+      "settings": {}
+    }
+  },
+  "postCreateCommand": "echo 'Ubuntu OS updated successfully!'"
+}

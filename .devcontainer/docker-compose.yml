@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  dev-container:
+    build:
+      context: .             # Path to the current directory
+      dockerfile: Dockerfile # Use the Dockerfile in the current directory
+    volumes:
+      - ..:/workspace        # Mount the parent project directory into /workspace
+    container_name: dev-container

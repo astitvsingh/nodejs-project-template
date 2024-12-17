@@ -2,10 +2,10 @@
 
 This `CHANGELOG.md` document serves as a chronological record of changes, updates, and releases made to the project over time. It provides a structured overview of new features, enhancements, bug fixes, and other modifications introduced in each version or release.
 
-## Table Of Content
+## 🗂️ Table Of Contents
 
 - [Changelog](#changelog)
-  - [Table Of Content](#table-of-content)
+  - [🗂️ Table Of Contents](#️-table-of-contents)
   - [\[Unreleased\]](#unreleased)
     - [Unreleased - Added](#unreleased---added)
     - [Unreleased - Changed](#unreleased---changed)

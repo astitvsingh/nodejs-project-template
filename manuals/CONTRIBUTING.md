@@ -2,10 +2,10 @@
 
 Thank you for your interest in contributing to [Project Name]! Your contributions are crucial to the success of this project. Please follow these guidelines to ensure a smooth and efficient process.
 
-## Table of Contents
+## 🗂️ Table Of Contents
 
 - [Contributing to \[Project Name\]](#contributing-to-project-name)
-  - [Table of Contents](#table-of-contents)
+  - [🗂️ Table Of Contents](#️-table-of-contents)
   - [Reporting Bugs](#reporting-bugs)
   - [Requesting Features](#requesting-features)
   - [Contributing Code](#contributing-code)

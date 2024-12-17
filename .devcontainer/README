@@ -1,0 +1,80 @@
+# Ubuntu DevContainer
+
+This directory contains the configuration files for setting up a minimal Ubuntu-based development container using VSCode's Dev Containers extension.
+
+## 🗂️ Table Of Contents
+
+- [Ubuntu DevContainer](#ubuntu-devcontainer)
+  - [🗂️ Table Of Contents](#️-table-of-contents)
+  - [Purpose](#purpose)
+  - [Files](#files)
+  - [Usage](#usage)
+  - [Complete devcontainer.json Parameters List](#complete-devcontainerjson-parameters-list)
+
+## Purpose
+
+- Provides an updated Ubuntu 22.04 environment.
+- Serves as the base for further tool installation and development tasks.
+
+## Files
+
+1. **Dockerfile**: Defines the container's operating system and updates packages.
+2. **docker-compose.yml**: Configures the container's build and volume mounting.
+3. **devcontainer.json**: Tells VSCode how to interact with the container.
+4. **README.md**: Documentation for this setup.
+
+## Usage
+
+1. Ensure you have the following installed:
+
+   - [Docker](https://docs.docker.com/get-docker/)
+   - [Visual Studio Code](https://code.visualstudio.com/)
+   - [Dev Containers Extension](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers)
+
+2. Open this project folder in VSCode.
+
+3. Use the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run:
+
+---
+
+## Complete devcontainer.json Parameters List
+
+Here’s the **complete list of available parameters** for the `devcontainer.json` file used by Visual Studio Code's **Dev Containers** feature. These parameters define how the development container environment is built and configured.
+
+| **Parameter**          | **Type**        | **Description**                                                                                                    | **Example**                                                                                                                                         |
+| ---------------------- | --------------- | ------------------------------------------------------------------------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `name`                 | `string`        | The name of the dev container. This appears in the VS Code interface.                                              | `"name": "My Dev Container"`                                                                                                                        |
+| `image`                | `string`        | The Docker image to use as the base for the dev container.                                                         | `"image": "node:16-bullseye"`                                                                                                                       |
+| `build`                | `object`        | Specifies the build configuration for the container, including Dockerfile and build arguments.                     | `"build": { "dockerfile": "Dockerfile", "context": ".", "args": { "NODE_VERSION": "16" } }`                                                         |
+| `context`              | `string`        | The build context for the Dockerfile.                                                                              | `"context": "./"`                                                                                                                                   |
+| `dockerFile`           | `string`        | The path to the Dockerfile used to build the dev container image.                                                  | `"dockerFile": "./Dockerfile"`                                                                                                                      |
+| `features`             | `object`        | Used to add pre-configured features such as Node.js, Python, or Azure CLI to the dev container.                    | `"features": { "node": { "version": "16" }, "python": { "version": "3.10" } }`                                                                      |
+| `runArgs`              | `array<string>` | Additional arguments passed to `docker run` when starting the container.                                           | `"runArgs": ["--cap-add=SYS_PTRACE", "--security-opt=seccomp:unconfined"]`                                                                          |
+| `containerUser`        | `string`        | The user to use inside the container. Defaults to `root` if not specified.                                         | `"containerUser": "vscode"`                                                                                                                         |
+| `customizations`       | `object`        | Customize tools, extensions, or settings for specific editors like VS Code.                                        | `"customizations": { "vscode": { "extensions": ["ms-python.python", "dbaeumer.vscode-eslint"], "settings": { "editor.formatOnSave": true } } }`     |
+| `extensions`           | `array<string>` | (Deprecated: Use `customizations.vscode.extensions`) A list of VS Code extensions to install inside the container. | `"extensions": ["ms-python.python", "esbenp.prettier-vscode"]`                                                                                      |
+| `settings`             | `object`        | (Deprecated: Use `customizations.vscode.settings`) VS Code settings applied when the container is used.            | `"settings": { "editor.fontSize": 14, "terminal.integrated.shell.linux": "/bin/bash" }`                                                             |
+| `postCreateCommand`    | `string`        | Command(s) to run after the container is created.                                                                  | `"postCreateCommand": "npm install"`                                                                                                                |
+| `postStartCommand`     | `string`        | Command(s) to run after the container is started.                                                                  | `"postStartCommand": "echo 'Welcome!'"`                                                                                                             |
+| `postAttachCommand`    | `string`        | Command(s) to run after VS Code attaches to the container.                                                         | `"postAttachCommand": "source ~/.bashrc"`                                                                                                           |
+| `initializeCommand`    | `string`        | Command(s) to run before the container starts but after it is created.                                             | `"initializeCommand": "echo 'Initializing...'"`                                                                                                     |
+| `shutdownAction`       | `string`        | Determines what happens when VS Code shuts down the container. Options: `none`, `stopContainer`.                   | `"shutdownAction": "stopContainer"`                                                                                                                 |
+| `remoteEnv`            | `object`        | Environment variables to set in the container.                                                                     | `"remoteEnv": { "NODE_ENV": "development", "API_URL": "http://localhost:3000" }`                                                                    |
+| `forwardPorts`         | `array<number>` | A list of ports to forward from the container to the host.                                                         | `"forwardPorts": [3000, 8080]`                                                                                                                      |
+| `mounts`               | `array<string>` | Volumes or mounts to attach to the container.                                                                      | `"mounts": ["source=/path/to/data,target=/container/data,type=bind"]`                                                                               |
+| `remoteUser`           | `string`        | (Deprecated: Use `containerUser`) The user to use inside the container. Defaults to `root`.                        | `"remoteUser": "vscode"`                                                                                                                            |
+| `workspaceMount`       | `string`        | Overrides how the project folder is mounted in the container.                                                      | `"workspaceMount": "source=/host/path/to/workspace,target=/workspace,type=bind,consistency=cached"`                                                 |
+| `workspaceFolder`      | `string`        | Overrides the default workspace folder location inside the container.                                              | `"workspaceFolder": "/workspace"`                                                                                                                   |
+| `overrideCommand`      | `boolean`       | Whether the container should override the default `CMD` specified in the image.                                    | `"overrideCommand": false`                                                                                                                          |
+| `updateContentCommand` | `string`        | Command to update the dev container’s content before any user starts working in it.                                | `"updateContentCommand": "git pull && npm install"`                                                                                                 |
+| `hostRequirements`     | `object`        | Specifies host machine requirements (e.g., CPU cores, RAM).                                                        | `"hostRequirements": { "cpus": 2, "memory": "4gb" }`                                                                                                |
+| `onCreateCommand`      | `string`        | Command to run after the container is created, but before the user starts working.                                 | `"onCreateCommand": "setup.sh"`                                                                                                                     |
+| `waitFor`              | `string`        | Specifies when VS Code should consider the container ready (`onCreateCommand`, `postCreateCommand`).               | `"waitFor": "postCreateCommand"`                                                                                                                    |
+| `otherPortsAttributes` | `object`        | Configuration for ports not specified in `forwardPorts`, like visibility or auto-forwarding.                       | `"otherPortsAttributes": { "visibility": "private", "autoForward": false }`                                                                         |
+| `portsAttributes`      | `object`        | Configuration for each port in `forwardPorts`, allowing options for visibility or auto-forwarding.                 | `"portsAttributes": { "3000": { "label": "App Port", "onAutoForward": "notify" } }`                                                                 |
+| `containerEnv`         | `object`        | Additional environment variables to set when building or running the container.                                    | `"containerEnv": { "DEBUG": "true" }`                                                                                                               |
+| `additionalContainers` | `array<object>` | Additional containers to run alongside the primary development container.                                          | `"additionalContainers": [{ "name": "db", "image": "postgres", "ports": [5432], "env": { "POSTGRES_USER": "user", "POSTGRES_PASSWORD": "pass" } }]` |
+| `securityOpt`          | `array<string>` | Security options for the container, passed to `docker run`.                                                        | `"securityOpt": ["seccomp:unconfined"]`                                                                                                             |
+| `privileged`           | `boolean`       | Run the container in privileged mode.                                                                              | `"privileged": true`                                                                                                                                |
+
+---
