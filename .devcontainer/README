@@ -9,6 +9,7 @@ This directory contains the configuration files for setting up a minimal Ubuntu-
   - [Purpose](#purpose)
   - [Files](#files)
   - [Usage](#usage)
+  - [Next Steps](#next-steps)
   - [Complete devcontainer.json Parameters List](#complete-devcontainerjson-parameters-list)
 
 ## Purpose
@@ -33,7 +34,18 @@ This directory contains the configuration files for setting up a minimal Ubuntu-
 
 2. Open this project folder in VSCode.
 
-3. Use the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run:
+3. Use the Command Palette (`Ctrl+Shift+P` or `Cmd+Shift+P`) and run
+
+   ```plaintext
+     Remote-Containers: Reopen in Container
+   ```
+
+4. VSCode will build the container, update the Ubuntu OS, and open the `/workspace` folder.
+
+## Next Steps
+
+- Install additional tools or libraries as needed.
+- Use this container as the base for further development.
 
 ---
 
